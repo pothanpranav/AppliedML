@@ -14,9 +14,9 @@ final model selection.
 
 Write functions to:
 
--   Load the data from a given file path\
--   Preprocess the data (if needed)\
--   Split the data into train/validation/test sets\
+-   Load the data from a given file path
+-   Preprocess the data (if needed)
+-   Split the data into train/validation/test sets
 -   Store the splits as `train.csv`, `validation.csv`, and `test.csv`
 
 ------------------------------------------------------------------------
@@ -31,15 +31,15 @@ DataFrame.
 
 #### Preprocess Data
 
-Preprocessing steps applied: - Convert text to lowercase\
-- Remove punctuation and special characters using regex\
-- Remove extra whitespace\
-- Convert labels: - Ham → 0\
+Preprocessing steps applied: - Convert text to lowercase
+- Remove punctuation and special characters using regex
+- Remove extra whitespace
+- Convert labels: - Ham → 0
 - Spam → 1
 
 #### Split Data
 
-The dataset is split into: - Training Set → 70%\
+The dataset is split into: - Training Set → 70%
 - Validation Set → 15%\
 - Test Set → 15%
 
@@ -47,8 +47,8 @@ Stratified sampling is used to maintain class balance.
 
 #### Store Splits
 
-The split datasets are saved as: - `train.csv`\
-- `validation.csv`\
+The split datasets are saved as: - `train.csv`
+- `validation.csv`
 - `test.csv`
 
 ------------------------------------------------------------------------
@@ -57,21 +57,21 @@ The split datasets are saved as: - `train.csv`\
 
 Write functions to:
 
--   Fit a model on the training data\
--   Score a model on a given dataset\
+-   Fit a model on the training data
+-   Score a model on a given dataset
 -   Evaluate the model predictions
 
 ------------------------------------------------------------------------
 
 ### Validate the Model
 
--   Fit the model on training data\
--   Score on training and validation datasets\
+-   Fit the model on training data
+-   Score on training and validation datasets
 -   Evaluate performance using:
-    -   Accuracy\
-    -   Precision\
-    -   Recall\
-    -   F1 Score\
+    -   Accuracy
+    -   Precision
+    -   Recall
+    -   F1 Score
 -   Fine-tune hyperparameters (if necessary)
 
 ------------------------------------------------------------------------
@@ -80,8 +80,8 @@ Write functions to:
 
 Three benchmark models were implemented:
 
--   Multinomial Naive Bayes\
--   Logistic Regression\
+-   Multinomial Naive Bayes
+-   Logistic Regression
 -   Linear Support Vector Machine (SVM)
 
 TF-IDF Vectorization was used for feature extraction.
@@ -109,9 +109,9 @@ Weakness: - Lower recall compared to Naive Bayes
 
 ### Linear SVM
 
-Strength: - Highest accuracy\
-- Highest recall\
-- Best F1 score\
+Strength: - Highest accuracy
+- Highest recall
+- Best F1 score
 - Best generalization
 
 ------------------------------------------------------------------------
@@ -130,9 +130,9 @@ Strength: - Highest accuracy\
 
 **Selected Model: Linear SVM**
 
-Reason: - Highest F1 Score\
-- Highest Accuracy\
-- Strong Precision + Recall Balance\
+Reason: - Highest F1 Score
+- Highest Accuracy
+- Strong Precision + Recall Balance
 - Best Test Performance
 
 ------------------------------------------------------------------------
@@ -141,15 +141,15 @@ Reason: - Highest F1 Score\
 
 Accuracy: **99%**
 
-Ham Detection: - Precision: 0.99\
+Ham Detection: - Precision: 0.99
 - Recall: 1.00
 
-Spam Detection: - Precision: 0.99\
+Spam Detection: - Precision: 0.99
 - Recall: 0.90
 
-Confusion Matrix Summary: - Ham correctly classified → 723\
-- Spam correctly classified → 101\
-- Spam missed → 11\
+Confusion Matrix Summary: - Ham correctly classified → 723
+- Spam correctly classified → 101
+- Spam missed → 11
 - False spam alerts → 1
 
 ------------------------------------------------------------------------
