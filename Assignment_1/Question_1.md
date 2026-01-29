@@ -1,4 +1,4 @@
-# Assignment 1: Prototype (Due 30 Jan 2025)
+# Assignment 1: Prototype (Due 30 Jan 2026)
 
 ## Build a Prototype for SMS Spam Classification
 
