@@ -153,6 +153,9 @@ Confusion Matrix Summary: - Ham correctly classified → 723
 - False spam alerts → 1
 
 ------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+## `train_detailed.ipynb`
 
 
 ## Data Loading
