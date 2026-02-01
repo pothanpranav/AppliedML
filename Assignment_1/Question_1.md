@@ -154,6 +154,169 @@ Confusion Matrix Summary: - Ham correctly classified → 723
 
 ------------------------------------------------------------------------
 
+
+## Data Loading
+
+The preprocessed datasets generated in `prepare.ipynb` are loaded:
+
+- `train.csv`
+- `validation.csv`
+- `test.csv`
+
+Each dataset contains:
+- `message` → SMS text
+- `label` → 0 (ham), 1 (spam)
+
+Missing values are removed to ensure stable model training.
+
+------------------------------------------------------------------------
+
+## Feature Extraction
+
+Text messages are converted into numerical features using:
+
+- **TF-IDF Vectorization**
+  - Removes English stopwords
+  - Produces sparse, high-dimensional representations
+  - Suitable for linear text classification models
+
+------------------------------------------------------------------------
+
+## Models Used
+
+Three classification models are trained and evaluated:
+
+- **Multinomial Naive Bayes**
+- **Logistic Regression**
+- **Linear Support Vector Machine (SVM)**
+
+All models are implemented using a unified **Pipeline** structure that
+combines TF-IDF vectorization with classification.
+
+------------------------------------------------------------------------
+
+## Baseline Model Training
+
+Each model is first trained using default hyperparameters.
+
+For each baseline model:
+- Training and validation predictions are generated
+- Evaluation metrics are computed:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+- Confusion matrices are plotted
+- ROC curves are plotted on the validation set
+
+Baseline models provide a reference point before tuning.
+
+------------------------------------------------------------------------
+
+## Hyperparameter Tuning
+
+Hyperparameter tuning is performed using **GridSearchCV** with
+5-fold cross-validation.
+
+Tuned parameters:
+
+- **Naive Bayes**
+  - `alpha`
+- **Logistic Regression**
+  - `C`
+- **Linear SVM**
+  - `C`
+
+The **F1-score** is used as the optimization metric due to class imbalance.
+
+------------------------------------------------------------------------
+
+## Tuned Model Evaluation
+
+After tuning, all models are evaluated again on:
+
+- Training dataset
+- Validation dataset
+
+For each tuned model:
+- Accuracy, precision, recall, and F1-score are reported
+- Confusion matrices are plotted
+- ROC curves are plotted on validation data
+
+------------------------------------------------------------------------
+
+## Threshold Analysis
+
+For the Linear SVM model:
+
+- Decision scores are extracted using `decision_function`
+- Precision–Recall curve is computed
+- Spam-class F1-score is analyzed across decision thresholds
+
+This analysis helps understand the trade-off between precision and recall.
+
+------------------------------------------------------------------------
+
+## Feature Interpretability
+
+Feature weights from the trained Linear SVM model are analyzed.
+
+- Words with highest positive weights → strong spam indicators
+- Words with most negative weights → strong ham indicators
+
+This provides insight into which terms influence predictions.
+
+------------------------------------------------------------------------
+
+## Learning Curve Analysis
+
+A learning curve is plotted for the Linear SVM model:
+
+- Training sizes range from 20% to 100%
+- 5-fold cross-validation is used
+- F1-score is reported for both training and validation sets
+
+This helps assess:
+- Model generalization
+- Bias–variance behavior
+- Effect of increasing training data size
+
+------------------------------------------------------------------------
+
+## Model Selection
+
+Models are compared using **validation F1-score**.
+
+The model with the highest validation F1-score is selected as the final model.
+This ensures that model selection is based only on unseen validation data.
+
+------------------------------------------------------------------------
+
+## Test Set Evaluation
+
+The selected model is evaluated once on the test dataset.
+
+Evaluation includes:
+- Classification report
+- Confusion matrix
+- ROC curve
+
+The test set is not used during training or tuning.
+
+------------------------------------------------------------------------
+
+## Final Outcome
+
+**Selected Model:** Linear Support Vector Machine (SVM)
+
+The Linear SVM achieves:
+- High accuracy
+- Strong precision and recall balance
+- Best F1-score on validation and test set
+
+
+
+
 ## Conclusion
 
 The SMS Spam Classification prototype was successfully developed. Data
