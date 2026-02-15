@@ -1,0 +1,14 @@
+artifact_uri: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/8a2051e22248487cb1cb0935724429b1/artifacts
+end_time: 1770992377658
+entry_point_name: ''
+experiment_id: '391340836223050156'
+lifecycle_stage: active
+run_id: 8a2051e22248487cb1cb0935724429b1
+run_name: Random_Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770992366833
+status: 3
+tags: []
+user_id: root

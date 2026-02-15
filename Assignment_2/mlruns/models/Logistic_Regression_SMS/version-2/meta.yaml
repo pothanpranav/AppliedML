@@ -1,0 +1,15 @@
+creation_timestamp: 1771018569509
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1771018569509
+model_id: m-f0c1ac382cf746e9b0f79fb145fcf7df
+name: Logistic_Regression_SMS
+run_id: 39ae315a0d004ffea175a7a03a046224
+run_link: null
+source: models:/m-f0c1ac382cf746e9b0f79fb145fcf7df
+status: READY
+status_message: null
+storage_location: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/models/m-f0c1ac382cf746e9b0f79fb145fcf7df/artifacts
+user_id: null
+version: 2

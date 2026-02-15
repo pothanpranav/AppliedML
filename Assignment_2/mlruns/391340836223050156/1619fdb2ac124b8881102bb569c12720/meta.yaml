@@ -1,0 +1,14 @@
+artifact_uri: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/1619fdb2ac124b8881102bb569c12720/artifacts
+end_time: 1771018558461
+entry_point_name: ''
+experiment_id: '391340836223050156'
+lifecycle_stage: active
+run_id: 1619fdb2ac124b8881102bb569c12720
+run_name: Naive_Bayes_SMS
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771018542154
+status: 3
+tags: []
+user_id: root

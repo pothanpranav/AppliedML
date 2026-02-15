@@ -1,0 +1,15 @@
+creation_timestamp: 1770992319662
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1770992319662
+model_id: m-7e87037b6667402887dd294a60e98a9a
+name: Naive_Bayes_SMS
+run_id: c05bea6d1446445b9f3139488e7b67a1
+run_link: null
+source: models:/m-7e87037b6667402887dd294a60e98a9a
+status: READY
+status_message: null
+storage_location: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/models/m-7e87037b6667402887dd294a60e98a9a/artifacts
+user_id: null
+version: 1

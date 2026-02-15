@@ -1,0 +1,10 @@
+artifact_location: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/models/m-7e87037b6667402887dd294a60e98a9a/artifacts
+creation_timestamp: 1770992303651
+experiment_id: '391340836223050156'
+last_updated_timestamp: 1770992319475
+model_id: m-7e87037b6667402887dd294a60e98a9a
+model_type: null
+name: model
+source_run_id: c05bea6d1446445b9f3139488e7b67a1
+status: 2
+status_message: null

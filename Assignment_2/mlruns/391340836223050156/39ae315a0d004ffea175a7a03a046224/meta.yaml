@@ -1,0 +1,14 @@
+artifact_uri: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/39ae315a0d004ffea175a7a03a046224/artifacts
+end_time: 1771018569988
+entry_point_name: ''
+experiment_id: '391340836223050156'
+lifecycle_stage: active
+run_id: 39ae315a0d004ffea175a7a03a046224
+run_name: Logistic_Regression_SMS
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771018558488
+status: 3
+tags: []
+user_id: root

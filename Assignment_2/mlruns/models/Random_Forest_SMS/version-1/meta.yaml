@@ -1,0 +1,15 @@
+creation_timestamp: 1770992377308
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1770992377308
+model_id: m-77f9cf97688842d2b9641d05edd461d4
+name: Random_Forest_SMS
+run_id: 8a2051e22248487cb1cb0935724429b1
+run_link: null
+source: models:/m-77f9cf97688842d2b9641d05edd461d4
+status: READY
+status_message: null
+storage_location: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/models/m-77f9cf97688842d2b9641d05edd461d4/artifacts
+user_id: null
+version: 1

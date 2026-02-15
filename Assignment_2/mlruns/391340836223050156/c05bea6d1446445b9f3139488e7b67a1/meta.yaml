@@ -1,0 +1,14 @@
+artifact_uri: /content/drive/MyDrive/AMLAssignment/mlruns/391340836223050156/c05bea6d1446445b9f3139488e7b67a1/artifacts
+end_time: 1770992319949
+entry_point_name: ''
+experiment_id: '391340836223050156'
+lifecycle_stage: active
+run_id: c05bea6d1446445b9f3139488e7b67a1
+run_name: Naive_Bayes
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770992302194
+status: 3
+tags: []
+user_id: root
